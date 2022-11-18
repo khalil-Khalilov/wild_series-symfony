@@ -11,9 +11,9 @@ class ProgramFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {
-        for ($i = 0; $i < 5; $i++) {
+        for ($i = 0; $i < 15; $i++) {
             $program = new Program();
-            $program->setTitle('Vendredi 13');
+            $program->setTitle('Vendredi ' . $i);
             $program->setSynopsis("Un groupe d'adolescents découvre le camp de Crystal 
                 Lake en même temps que le terrifiant Jason Voorhees et ses intentions meurtrières...");
             $program->setCategory($this->getReference('category_Horreur'));
